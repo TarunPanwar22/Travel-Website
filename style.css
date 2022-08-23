@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 16px ;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+.inner{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.wrapper{
+    width: 100%;
+    background-color: #f4f6fa;
+    height: auto;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation{
+    width: 100%; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(34 44 56/50%);
+    position: fixed;
+    z-index: 5; 
+    padding: 15px 0px;
+    color: #333;
+    transition: top 0 0.3s;
+}
+
+.nav-bar{
+    align-items: center;
+    padding: 0 2%;
+}
+
+.nav-bar .blue{
+    color: #3ec70b;
+}
+
+.nav-bar h2{
+    color: black;
+    font-size: 1.8rem;
+}
+
+.nav-bar ul {
+    width: 45%;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    list-style: none;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-bar ul a:hover{
+    color: #3ec70b;
+    cursor: pointer;
+}
+
+.nav-bar .toggle-btn{
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #3ec70b;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+
+}
+
+.banner .left{
+    width: 50%;
+}
+
+.left img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner .right {
+    width: 47%;
+    text-align: center;
+}
+
+.banner .right h1{
+    font-size: 4.5rem;
+    color: rgb(66, 66 , 66);
+    font-style: italic;
+}
+
+.banner .right h2{
+    font-size: 5.5rem;
+    color: #eb5353;
+}
+
+.right h3{
+    font-size: 2.5rem;
+    color: #3ec70b;
+    margin: 20px 0px ;
+
+}
+
+.code{
+    color: #3ec70b;
+}
+
+.banner .right p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    color: gray;
+    margin-top: 30px;
+}
+
+.btn{
+    padding: 12px 30px ;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #3ec70b;
+    color: #fff;
+    box-shadow: 0 6px 24px rgb(99 71 249/40%);
+    transition: all 0.3 ease;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn1{
+    background-color: #fff;
+    color: #3ec70b;
+    box-sizing: 0 6px 24px #e4e2ee; 
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+.four-section{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.four-section h3{
+    color: #3ec70b;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.four-section h1{
+    text-transform: capitalize;
+    padding-top: 5px;
+    font-size: 2.5rem;
+}
+
+.boxes{
+    padding: 50px 0;
+}
+
+.box{
+    width: 23%;
+    background-color: #f4f6fa;
+    box-shadow: 10px 2px 8px rgba(5,5, 5, 0.12);
+    border-radius: 14px;
+    padding-bottom: 5px;
+}
+
+.img-box{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.img-box:hover{
+    border-radius: 14px 14px 0 0 ;
+}
+
+.box:hover img{
+    transform: scale(1.5);
+}
+.text{
+    text-align: left;
+    padding: 15px;
+
+}
+
+.text h2{
+    font-size: 1.5rem;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+.text h4{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.inner-box{
+    width: 100%;
+    padding-top: 10px;
+
+}
+.icon{
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .wrapper{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .banner{
+        margin-top: 0vh ;
+    }
+
+    .banner .left{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .left img{
+        width: 100%;
+    }
+    .banner .right{
+        width: 100%;
+        margin: 50px 10px ;
+    }
+    .banner .right h1{
+        padding-top: 50px;     
+    }
+    .box{
+        width: 45%;
+        margin: 20px 0;
+    }
+    .boxes{
+        padding: 25px;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .nav-bar ul{
+        display: none;
+        padding: 0;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        text-align: center;
+        background-color: #fff;
+        width: 100%;
+    }    
+    .nav-bar ul li {
+        padding: 20px 0;
+        margin-right: 30px ;
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .nav-bar ul a {
+        color: black;
+    }
+    .nav-bar .toggle-btn{
+        font-size: 1.8rem;
+        display: block;
+    }
+
+    .nav-bar h3{
+        font-size: 1.3rem;
+    }
+    .nav-bar ul {
+        width: 100;
+
+    }
+    .banner .btn{
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .nav-bar h2{
+        color: black;
+        font-size: 1.7rem;
+
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .box{
+        width: 90%;
+        margin: 25px auto;
+    }
+    .banner-code{
+        font-size: 11rem;
+    }
+    .banner .right h1{
+        font-size: 3.5rem ;
+    }
+
+    .banner-code{
+        font-size: 11rem;
+    }
+    .banner .btn1 {
+        margin-left : 0;
+    }
+    
+}
+
+.btn:hover{
+    background-color: white;
+    color: #3ec70b;
+}
+.btn1:hover{
+    background-color: #3ec70b;
+    color: white;
+}
